@@ -1,5 +1,3 @@
-
-
 #include "csp_autoconfig.h"
 
 #include "csp_conn.h"

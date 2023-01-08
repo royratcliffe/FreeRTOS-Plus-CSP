@@ -1,5 +1,3 @@
-
-
 #include "csp_qfifo.h"
 
 #include <csp/arch/csp_queue.h>

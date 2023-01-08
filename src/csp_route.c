@@ -1,5 +1,3 @@
-
-
 #include <csp/csp.h>
 
 #include <stdlib.h>

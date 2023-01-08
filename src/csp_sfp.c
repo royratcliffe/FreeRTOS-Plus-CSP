@@ -1,5 +1,3 @@
-
-
 #include <csp/csp_sfp.h>
 
 #include <malloc.h>

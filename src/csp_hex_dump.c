@@ -1,5 +1,3 @@
-
-
 #include <csp/csp_debug.h>
 #include <inttypes.h>
 #include <stddef.h>

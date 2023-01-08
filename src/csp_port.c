@@ -1,5 +1,3 @@
-
-
 #include "csp_port.h"
 
 #include <stdlib.h>

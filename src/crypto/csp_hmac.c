@@ -1,5 +1,3 @@
-
-
 /* Hash-based Message Authentication Code - based on code from libtom.org */
 
 #include <csp/crypto/csp_hmac.h>

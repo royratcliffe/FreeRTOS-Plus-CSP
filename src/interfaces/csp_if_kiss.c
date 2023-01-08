@@ -1,5 +1,3 @@
-
-
 /**
  * Testing:
  * Use the following linux tool to setup loopback port to test with:

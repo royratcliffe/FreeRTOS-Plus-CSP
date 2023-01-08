@@ -1,5 +1,3 @@
-
-
 #include <csp/csp_crc32.h>
 #include <csp/csp_id.h>
 

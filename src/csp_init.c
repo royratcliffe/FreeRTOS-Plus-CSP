@@ -1,5 +1,3 @@
-
-
 #include "csp_conn.h"
 #include "csp_port.h"
 #include "csp_qfifo.h"

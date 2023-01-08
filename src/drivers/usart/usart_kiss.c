@@ -1,5 +1,3 @@
-
-
 #include <csp/interfaces/csp_if_kiss.h>
 
 #include <csp/csp_debug.h>

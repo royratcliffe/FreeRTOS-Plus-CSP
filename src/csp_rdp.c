@@ -1,5 +1,3 @@
-
-
 /*
  * This is a implementation of the seq/ack handling taken from the Reliable
  * Datagram Protocol (RDP) For more information read RFC 908/1151. The

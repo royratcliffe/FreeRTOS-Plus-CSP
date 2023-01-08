@@ -1,5 +1,3 @@
-
-
 #include <csp/arch/csp_queue.h>
 #include <csp/csp.h>
 

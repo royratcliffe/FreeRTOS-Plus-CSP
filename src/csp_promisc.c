@@ -1,5 +1,3 @@
-
-
 #include "csp_promisc.h"
 
 #include <csp/arch/csp_queue.h>

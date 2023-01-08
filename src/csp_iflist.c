@@ -1,5 +1,3 @@
-
-
 #include <csp/csp_id.h>
 #include <csp/csp_iflist.h>
 

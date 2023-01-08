@@ -1,5 +1,3 @@
-
-
 #include <csp/interfaces/csp_if_can.h>
 
 #include <endian.h>

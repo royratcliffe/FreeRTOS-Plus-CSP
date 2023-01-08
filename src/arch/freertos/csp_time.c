@@ -1,5 +1,3 @@
-
-
 #include <csp/arch/csp_time.h>
 
 #include <FreeRTOS.h>

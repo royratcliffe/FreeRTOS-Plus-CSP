@@ -1,5 +1,3 @@
-
-
 #include "csp_io.h"
 
 #include <stdlib.h>

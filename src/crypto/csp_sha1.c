@@ -1,5 +1,3 @@
-
-
 /* Code originally from Python's SHA1 Module, who based it on libtom.org */
 
 #include <csp/crypto/csp_sha1.h>
