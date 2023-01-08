@@ -14,14 +14,14 @@
    @param[in] packet CSP packet, must be valid.
    @return #CSP_ERR_NONE on success, otherwise an error code.
 */
-int csp_crc32_append(csp_packet_t * packet);
+int csp_crc32_append(csp_packet_t *packet);
 
 /**
    Verify CRC32 checksum on packet.
    @param[in] packet CSP packet, must be valid.
    @return #CSP_ERR_NONE on success, otherwise an error code.
 */
-int csp_crc32_verify(csp_packet_t * packet);
+int csp_crc32_verify(csp_packet_t *packet);
 
 /**
    Calculate checksum for a given memory area.
@@ -29,5 +29,4 @@ int csp_crc32_verify(csp_packet_t * packet);
    @param[in] length length of memory to do checksum on
    @return checksum
 */
-uint32_t csp_crc32_memory(const uint8_t * addr, uint32_t length);
-
+uint32_t csp_crc32_memory(const uint8_t *addr, uint32_t length);

@@ -10,8 +10,6 @@
 
 #include <csp/csp_interface.h>
 
-
-
 /**
    Name of loopback interface.
 */

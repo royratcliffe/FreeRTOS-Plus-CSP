@@ -5,16 +5,17 @@
 
 /**
  * NEW DEBUG API:
- * 
+ *
  * Based on counters, and error numbers.
  * This gets rid of a lot of verbose debugging strings while
  * still maintaining the same level of debug capabilities.
- * 
+ *
  * NOTE: We choose to ignore atomic access to the counters right now.
- *   1) Most of the access to these happens single threaded (router task) or within ISR (driver RX)
- *   2) Having accurate error counters is NOT a priority. They are only there for debugging purposes.
- *   3) Not all compilers have support for <stdatomic.h> yet.
- * 
+ *   1) Most of the access to these happens single threaded (router task) or
+ * within ISR (driver RX) 2) Having accurate error counters is NOT a priority.
+ * They are only there for debugging purposes. 3) Not all compilers have support
+ * for <stdatomic.h> yet.
+ *
  */
 
 /** Error counters */
@@ -52,15 +53,32 @@ extern uint8_t csp_dbg_rdp_print;
 extern uint8_t csp_dbg_packet_print;
 
 /* Helper macros for toggled printf */
-void csp_print_func(const char * fmt, ...);
+void csp_print_func(const char *fmt, ...);
 
 /* Compile time disable all printout from CSP */
 #if (CSP_ENABLE_CSP_PRINT)
 #define csp_print(...) csp_print_func(__VA_ARGS__);
 #else
-#define csp_print(...) do {} while(0)
+#define csp_print(...)                                                         \
+  do {                                                                         \
+  } while (0)
 #endif
 
-#define csp_rdp_error(format, ...) { if (csp_dbg_rdp_print >= 1) { csp_print("\033[31m" format "\033[0m", ##__VA_ARGS__); }}
-#define csp_rdp_protocol(format, ...) { if (csp_dbg_rdp_print >= 2) { csp_print("\033[34m" format "\033[0m", ##__VA_ARGS__); }}
-#define csp_print_packet(format, ...) { if (csp_dbg_packet_print >= 1) { csp_print("\033[32m" format "\033[0m", ##__VA_ARGS__); }}
+#define csp_rdp_error(format, ...)                                             \
+  {                                                                            \
+    if (csp_dbg_rdp_print >= 1) {                                              \
+      csp_print("\033[31m" format "\033[0m", ##__VA_ARGS__);                   \
+    }                                                                          \
+  }
+#define csp_rdp_protocol(format, ...)                                          \
+  {                                                                            \
+    if (csp_dbg_rdp_print >= 2) {                                              \
+      csp_print("\033[34m" format "\033[0m", ##__VA_ARGS__);                   \
+    }                                                                          \
+  }
+#define csp_print_packet(format, ...)                                          \
+  {                                                                            \
+    if (csp_dbg_packet_print >= 1) {                                           \
+      csp_print("\033[32m" format "\033[0m", ##__VA_ARGS__);                   \
+    }                                                                          \
+  }
