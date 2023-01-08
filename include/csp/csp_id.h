@@ -1,5 +1,7 @@
 #pragma once
 
+#include <csp/csp_types.h>
+
 void csp_id1_prepend(csp_packet_t *packet);
 int csp_id1_strip(csp_packet_t *packet);
 void csp_id1_setup_rx(csp_packet_t *packet);
